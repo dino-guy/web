@@ -76,9 +76,6 @@ insert into Delivery(Delivery_ID,order_ID,Delivery_date,Deliveryboy_ID,Delivery_
 select*from Delivery;
 
 select*from orders where Total_amt>1300;
-
-select customers.customer_name,count(orders.order_ID)as Totalorders 
-from customers join orders on customer_ID=customers.customer_ID group by customers.customer_name;
  
  select orders.order_ID,orders.order_date,
  customers.customer_name,
