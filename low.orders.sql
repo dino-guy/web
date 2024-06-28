@@ -52,8 +52,6 @@ price int,
 foreign key (order_ID) references orders(order_ID),
 foreign key (product_ID) references products(product_ID),
 constraint unique_orders_products unique(order_ID,product_ID));
-
-drop table orderItems;
  
 insert into orderItems(orderItem_ID,order_ID ,product_ID,productItem_ID,Quantity,price)value
 (1,1,101,301,2,12000),
